@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const WingIcon = () => (
+const PotentillaIcon = () => (
   <svg
     width="24"
     height="20"
@@ -14,21 +14,18 @@ const WingIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     className="text-primary"
   >
-    <path
-      d="M2 18C2 18 4 16 8 14C12 12 16 10 20 8C22 7 23 6 24 5C23 6 22 8 20 10C18 12 14 14 10 16C6 18 2 18 2 18Z"
-      fill="currentColor"
-      opacity="0.8"
-    />
-    <path
-      d="M2 14C2 14 4 12 8 10C12 8 16 6 20 4C22 3 23 2 24 1C23 2 22 4 20 6C18 8 14 10 10 12C6 14 2 14 2 14Z"
-      fill="currentColor"
-      opacity="0.6"
-    />
-    <path
-      d="M2 10C2 10 4 8 8 6C12 4 16 2 20 0C22 -1 23 -2 24 -3C23 -2 22 0 20 2C18 4 14 6 10 8C6 10 2 10 2 10Z"
-      fill="currentColor"
-      opacity="0.4"
-    />
+    {/* Potentilla flower with 5 petals */}
+    <circle cx="12" cy="10" r="2" fill="currentColor" opacity="0.9" />
+    <ellipse cx="12" cy="6" rx="2.5" ry="3" fill="currentColor" opacity="0.7" />
+    <ellipse cx="16.5" cy="8.5" rx="2.5" ry="3" fill="currentColor" opacity="0.7" transform="rotate(72 16.5 8.5)" />
+    <ellipse cx="15" cy="13.5" rx="2.5" ry="3" fill="currentColor" opacity="0.7" transform="rotate(144 15 13.5)" />
+    <ellipse cx="9" cy="13.5" rx="2.5" ry="3" fill="currentColor" opacity="0.7" transform="rotate(216 9 13.5)" />
+    <ellipse cx="7.5" cy="8.5" rx="2.5" ry="3" fill="currentColor" opacity="0.7" transform="rotate(288 7.5 8.5)" />
+    {/* Stem */}
+    <path d="M12 12 L12 18" stroke="currentColor" strokeWidth="2" opacity="0.6" />
+    {/* Small leaves */}
+    <path d="M10 14 Q8 15 10 16" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.5" />
+    <path d="M14 14 Q16 15 14 16" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.5" />
   </svg>
 );
 
@@ -40,7 +37,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between px-4 sm:px-6">
         {/* Logo - Mobile First */}
         <Link to="/" className="flex items-center space-x-2 group flex-shrink-0">
-          <WingIcon />
+          <PotentillaIcon />
           <div className="flex flex-col">
             <span className="text-lg sm:text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">
               Discover
@@ -150,7 +147,7 @@ const Header = () => {
                 {/* Mobile Menu Header */}
                 <div className="flex items-center justify-between pb-4 border-b">
                   <div className="flex items-center space-x-2">
-                    <WingIcon />
+                    <PotentillaIcon />
                     <div className="flex flex-col">
                       <span className="text-lg font-bold text-primary">
                         Discover
