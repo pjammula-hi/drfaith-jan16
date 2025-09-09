@@ -53,7 +53,7 @@ const Header = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))]">
+                <NavigationMenuTrigger className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] data-[state=open]:text-[hsl(var(--nav-hover))] data-[active]:text-[hsl(218,52%,48%)]">
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-transparent backdrop-blur-sm border-none shadow-none">
