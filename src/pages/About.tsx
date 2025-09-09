@@ -54,21 +54,19 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-primary">
               About Dr. Faith Consiglio
             </h2>
-            <div className="prose prose-lg text-muted-foreground">
-              <p className="leading-relaxed">
-                Dr Faith Consiglio received her doctorate from the Renaissance School of Medicine at 
-                Stony Brook University and completed her residency in Psychiatry at Westchester Medical Center in NY.
-              </p>
-              <p className="leading-relaxed">
+            <div className="space-y-6 text-lg leading-relaxed">
+              <p className="text-foreground">
                 She offers a combination of medication management and psychotherapy, providing thorough 
                 sessions and considering all facets of life including the nuances of physical, mental 
                 and social well-being.
               </p>
-              <p className="leading-relaxed">
-                She is also a member of the International Society for Sports Psychiatry, and works with 
-                athletes looking to improve their performance. She is certified in Mindfulness-Based 
-                Stress Reduction, and helps clients manage burn out, build confidence, and acquire the 
-                tools needed to reach their goals.
+              <p className="text-foreground">
+                She is certified in Mindfulness-Based Stress Reduction, and helps clients manage burn out, 
+                build confidence, and acquire the tools needed to reach their goals.
+              </p>
+              <p className="text-foreground">
+                Her integrated approach combines evidence-based treatments with personalized care, ensuring 
+                each client receives comprehensive support tailored to their unique needs and circumstances.
               </p>
             </div>
           </div>
