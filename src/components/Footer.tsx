@@ -163,26 +163,6 @@ const Footer = () => {
             <p className="text-[hsl(var(--footer-foreground))]/70 text-sm">
               © 2024 All rights reserved.
             </p>
-            <div className="flex items-center space-x-6">
-              <a 
-                href="#" 
-                className="text-[hsl(var(--footer-foreground))]/70 hover:text-[hsl(var(--footer-accent))] text-sm transition-colors"
-              >
-                Terms of Service
-              </a>
-              <a 
-                href="#" 
-                className="text-[hsl(var(--footer-foreground))]/70 hover:text-[hsl(var(--footer-accent))] text-sm transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a 
-                href="#" 
-                className="text-[hsl(var(--footer-foreground))]/70 hover:text-[hsl(var(--footer-accent))] text-sm transition-colors"
-              >
-                Accessibility
-              </a>
-            </div>
           </div>
         </div>
       </div>
