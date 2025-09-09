@@ -51,24 +51,26 @@ const About = () => {
 
         {/* Education & Training */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-primary mb-8">Education & Training</h3>
-          
-          <div className="space-y-6">
-            <div className="flex flex-col sm:flex-row sm:items-start sm:gap-8">
-              <div className="min-w-[120px]">
-                <h4 className="font-semibold text-foreground">MD Degree</h4>
+          <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
+            <div className="flex items-start gap-6">
+              <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0">
+                <GraduationCap className="w-8 h-8 text-muted-foreground" />
               </div>
-              <div>
-                <p className="text-foreground">Renaissance School of Medicine, Stony Brook University</p>
-              </div>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row sm:items-start sm:gap-8">
-              <div className="min-w-[120px]">
-                <h4 className="font-semibold text-foreground">Residency</h4>
-              </div>
-              <div>
-                <p className="text-foreground">Psychiatry at Westchester Medical Center, NY</p>
+              
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-foreground mb-8">Education & Training</h3>
+                
+                <div className="space-y-6">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                    <div className="font-semibold text-foreground">MD Degree</div>
+                    <div className="text-muted-foreground sm:text-right">Renaissance School of Medicine, Stony Brook University</div>
+                  </div>
+                  
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                    <div className="font-semibold text-foreground">Residency</div>
+                    <div className="text-muted-foreground sm:text-right">Psychiatry at Westchester Medical Center, NY</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
