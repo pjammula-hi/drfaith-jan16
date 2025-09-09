@@ -1,4 +1,4 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import drFaithHeadshot from "@/assets/dr-faith-headshot.jpg";
 
 const Index = () => {
   return (
@@ -63,15 +63,11 @@ const Index = () => {
           {/* Right Content - Photo Placeholder */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-96 bg-muted/20 rounded-2xl border-2 border-dashed border-muted-foreground/30 flex flex-col items-center justify-center text-center p-8">
-                <div className="w-16 h-16 bg-muted/40 rounded-full flex items-center justify-center mb-4">
-                  <svg className="w-8 h-8 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </div>
-                <p className="text-muted-foreground font-medium mb-2">Upload New Photo</p>
-                <p className="text-sm text-muted-foreground/70">Professional Image Placeholder</p>
-              </div>
+              <img 
+                src={drFaithHeadshot} 
+                alt="Dr. Faith Consiglio - Board Certified Psychiatrist" 
+                className="w-80 h-96 object-cover rounded-2xl shadow-lg"
+              />
               
               {/* Doctor Info Card */}
               <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
