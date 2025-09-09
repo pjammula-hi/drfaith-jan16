@@ -48,43 +48,6 @@ const About = () => {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* Introduction */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">
-              About Dr. Faith Consiglio
-            </h2>
-            <div className="space-y-6 text-lg leading-relaxed">
-              <p className="text-foreground">
-                She offers a combination of medication management and psychotherapy, providing thorough 
-                sessions and considering all facets of life including the nuances of physical, mental 
-                and social well-being.
-              </p>
-              <p className="text-foreground">
-                She is certified in Mindfulness-Based Stress Reduction, and helps clients manage burn out, 
-                build confidence, and acquire the tools needed to reach their goals.
-              </p>
-              <p className="text-foreground">
-                Her integrated approach combines evidence-based treatments with personalized care, ensuring 
-                each client receives comprehensive support tailored to their unique needs and circumstances.
-              </p>
-            </div>
-          </div>
-          
-          <div className="relative">
-            <div className="bg-gradient-to-br from-primary/10 via-secondary/20 to-primary/5 rounded-2xl p-8 shadow-lg">
-              <div className="text-center space-y-4">
-                <div className="w-32 h-32 mx-auto bg-primary/20 rounded-full flex items-center justify-center">
-                  <Heart className="w-16 h-16 text-primary" />
-                </div>
-                <h3 className="text-2xl font-bold text-primary">Holistic Care</h3>
-                <p className="text-muted-foreground">
-                  Treating the whole person, not just symptoms
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Education & Training */}
         <div className="mb-20">
