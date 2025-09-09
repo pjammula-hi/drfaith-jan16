@@ -14,18 +14,18 @@ const PotentillaIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     className="text-primary"
   >
-    {/* Potentilla flower with 5 petals */}
-    <circle cx="12" cy="10" r="2" fill="currentColor" opacity="0.9" />
-    <ellipse cx="12" cy="6" rx="2.5" ry="3" fill="currentColor" opacity="0.7" />
-    <ellipse cx="16.5" cy="8.5" rx="2.5" ry="3" fill="currentColor" opacity="0.7" transform="rotate(72 16.5 8.5)" />
-    <ellipse cx="15" cy="13.5" rx="2.5" ry="3" fill="currentColor" opacity="0.7" transform="rotate(144 15 13.5)" />
-    <ellipse cx="9" cy="13.5" rx="2.5" ry="3" fill="currentColor" opacity="0.7" transform="rotate(216 9 13.5)" />
-    <ellipse cx="7.5" cy="8.5" rx="2.5" ry="3" fill="currentColor" opacity="0.7" transform="rotate(288 7.5 8.5)" />
-    {/* Stem */}
-    <path d="M12 12 L12 18" stroke="currentColor" strokeWidth="2" opacity="0.6" />
-    {/* Small leaves */}
-    <path d="M10 14 Q8 15 10 16" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.5" />
-    <path d="M14 14 Q16 15 14 16" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.5" />
+    {/* Potentilla flower with 5 petals in fluorescent pink */}
+    <circle cx="12" cy="10" r="2" fill="hsl(320, 100%, 75%)" opacity="0.9" />
+    <ellipse cx="12" cy="6" rx="2.5" ry="3" fill="hsl(330, 100%, 70%)" opacity="0.8" />
+    <ellipse cx="16.5" cy="8.5" rx="2.5" ry="3" fill="hsl(325, 100%, 72%)" opacity="0.8" transform="rotate(72 16.5 8.5)" />
+    <ellipse cx="15" cy="13.5" rx="2.5" ry="3" fill="hsl(315, 100%, 68%)" opacity="0.8" transform="rotate(144 15 13.5)" />
+    <ellipse cx="9" cy="13.5" rx="2.5" ry="3" fill="hsl(335, 100%, 74%)" opacity="0.8" transform="rotate(216 9 13.5)" />
+    <ellipse cx="7.5" cy="8.5" rx="2.5" ry="3" fill="hsl(310, 100%, 70%)" opacity="0.8" transform="rotate(288 7.5 8.5)" />
+    {/* Stem in natural green */}
+    <path d="M12 12 L12 18" stroke="hsl(120, 60%, 50%)" strokeWidth="2" opacity="0.7" />
+    {/* Small leaves in green */}
+    <path d="M10 14 Q8 15 10 16" stroke="hsl(130, 50%, 45%)" strokeWidth="1.5" fill="none" opacity="0.6" />
+    <path d="M14 14 Q16 15 14 16" stroke="hsl(130, 50%, 45%)" strokeWidth="1.5" fill="none" opacity="0.6" />
   </svg>
 );
 
