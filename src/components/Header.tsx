@@ -61,7 +61,7 @@ const Header = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         to="/services/general-adult-psychiatry"
-                        className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
                         <div className="text-sm font-medium text-[hsl(218,52%,48%)]">General Adult Psychiatry</div>
                       </Link>
@@ -69,7 +69,7 @@ const Header = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         to="/services/depression"
-                        className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
                         <div className="text-sm font-medium text-[hsl(218,52%,48%)]">Depression</div>
                       </Link>
@@ -77,7 +77,7 @@ const Header = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         to="/services/anxiety"
-                        className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
                         <div className="text-sm font-medium text-[hsl(218,52%,48%)]">Anxiety</div>
                       </Link>
@@ -85,7 +85,7 @@ const Header = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         to="/services/adhd"
-                        className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
                         <div className="text-sm font-medium text-[hsl(218,52%,48%)]">ADHD</div>
                       </Link>
@@ -93,7 +93,7 @@ const Header = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         to="/services/ocd"
-                        className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
                         <div className="text-sm font-medium text-[hsl(218,52%,48%)]">OCD</div>
                       </Link>
@@ -101,7 +101,7 @@ const Header = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         to="/services/womens-health"
-                        className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
                         <div className="text-sm font-medium text-[hsl(218,52%,48%)]">Women's Health</div>
                       </Link>
@@ -109,7 +109,7 @@ const Header = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         to="/services/sports-performance"
-                        className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
                         <div className="text-sm font-medium text-[hsl(218,52%,48%)]">Sports/Performance Psychiatry</div>
                       </Link>
