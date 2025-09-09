@@ -23,6 +23,11 @@ All colors MUST be HSL.
     --nav-primary: 218 52% 48%;
     --nav-primary-foreground: 210 20% 98%;
     --nav-hover: 320 100% 75%; /* Pink from logo */
+    
+    /* Footer colors */
+    --footer-bg: 218 65% 18%; /* Deep navy blue #0F2A5C */
+    --footer-foreground: 210 20% 98%;
+    --footer-accent: 320 100% 75%; /* Pink accent */
 
     --secondary: 210 40% 96%;
     --secondary-foreground: 215 28% 17%;
@@ -75,6 +80,11 @@ All colors MUST be HSL.
     --nav-primary: 218 52% 48%;
     --nav-primary-foreground: 210 20% 98%;
     --nav-hover: 320 100% 75%; /* Pink from logo */
+    
+    /* Footer colors */
+    --footer-bg: 218 65% 18%; /* Deep navy blue #0F2A5C */
+    --footer-foreground: 210 20% 98%;
+    --footer-accent: 320 100% 75%; /* Pink accent */
 
     --secondary: 215 28% 25%;
     --secondary-foreground: 210 20% 98%;
