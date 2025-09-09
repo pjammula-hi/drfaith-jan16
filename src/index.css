@@ -47,6 +47,10 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    /* Hero gradient backgrounds */
+    --hero-gradient: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(218 45% 96%) 25%, hsl(215 35% 94%) 50%, hsl(210 30% 96%) 75%, hsl(208 25% 98%) 100%);
+    --hero-gradient-overlay: linear-gradient(180deg, hsl(210 40% 98% / 0.95) 0%, hsl(215 35% 96% / 0.8) 50%, hsl(210 30% 94% / 0.9) 100%);
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -101,6 +105,11 @@ All colors MUST be HSL.
     --border: 215 28% 25%;
     --input: 215 28% 25%;
     --ring: 215 88% 52%;
+    
+    /* Hero gradient backgrounds - dark mode */
+    --hero-gradient: linear-gradient(135deg, hsl(215 28% 19%) 0%, hsl(218 30% 22%) 25%, hsl(215 25% 20%) 50%, hsl(210 20% 18%) 75%, hsl(208 18% 16%) 100%);
+    --hero-gradient-overlay: linear-gradient(180deg, hsl(215 28% 17% / 0.95) 0%, hsl(218 25% 20% / 0.8) 50%, hsl(210 20% 15% / 0.9) 100%);
+    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
