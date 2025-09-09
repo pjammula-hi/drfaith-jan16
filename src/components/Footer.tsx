@@ -29,7 +29,7 @@ const Footer = () => {
   return (
     <footer className="bg-[hsl(var(--footer-bg))] text-[hsl(var(--footer-foreground))] border-t border-white/10">
       <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
@@ -153,6 +153,19 @@ const Footer = () => {
                   Privacy Policy
                 </a>
               </li>
+            </ul>
+          </div>
+
+          {/* About Dr. Faith */}
+          <div>
+            <h3 className="text-lg font-semibold text-[hsl(var(--footer-foreground))] mb-4">Dr. Faith Consiglio, MD</h3>
+            <p className="text-[hsl(var(--footer-foreground))]/80 mb-4 leading-relaxed text-sm">
+              Board-certified psychiatrist providing compassionate, integrated mental health care in New York City.
+            </p>
+            <ul className="space-y-2 text-sm">
+              <li className="text-[hsl(var(--footer-foreground))]/70">Renaissance School of Medicine</li>
+              <li className="text-[hsl(var(--footer-foreground))]/70">Westchester Medical Center Residency</li>
+              <li className="text-[hsl(var(--footer-foreground))]/70">Mindfulness & Sports Psychology Certified</li>
             </ul>
           </div>
         </div>
