@@ -20,6 +20,9 @@ All colors MUST be HSL.
     --primary: 215 88% 52%;
     --primary-foreground: 210 20% 98%;
 
+    --nav-primary: 218 52% 48%;
+    --nav-primary-foreground: 210 20% 98%;
+
     --secondary: 210 40% 96%;
     --secondary-foreground: 215 28% 17%;
 
@@ -67,6 +70,9 @@ All colors MUST be HSL.
 
     --primary: 215 88% 52%;
     --primary-foreground: 210 20% 98%;
+
+    --nav-primary: 218 52% 48%;
+    --nav-primary-foreground: 210 20% 98%;
 
     --secondary: 215 28% 25%;
     --secondary-foreground: 210 20% 98%;
