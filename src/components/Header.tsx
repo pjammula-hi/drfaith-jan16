@@ -60,23 +60,78 @@ const Header = () => {
                   <div className="grid gap-3 p-4 w-[400px]">
                     <NavigationMenuLink asChild>
                       <Link
-                        to="/services/therapy"
+                        to="/services/general-adult-psychiatry"
                         className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
-                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">Individual Therapy</div>
+                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">General Adult Psychiatry</div>
                         <p className="line-clamp-2 text-sm leading-snug text-[hsl(218,52%,48%)]/70">
-                          Personalized one-on-one sessions for your mental health journey
+                          Comprehensive psychiatric care for adults
                         </p>
                       </Link>
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>
                       <Link
-                        to="/services/group"
+                        to="/services/depression"
                         className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
-                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">Group Therapy</div>
+                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">Depression</div>
                         <p className="line-clamp-2 text-sm leading-snug text-[hsl(218,52%,48%)]/70">
-                          Connect with others on similar journeys in a supportive environment
+                          Expert treatment for depressive disorders
+                        </p>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        to="/services/anxiety"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                      >
+                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">Anxiety</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-[hsl(218,52%,48%)]/70">
+                          Comprehensive anxiety disorder treatment
+                        </p>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        to="/services/adhd"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                      >
+                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">ADHD</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-[hsl(218,52%,48%)]/70">
+                          ADHD assessment and treatment
+                        </p>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        to="/services/ocd"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                      >
+                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">OCD</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-[hsl(218,52%,48%)]/70">
+                          Obsessive-compulsive disorder treatment
+                        </p>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        to="/services/womens-health"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                      >
+                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">Women's Health</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-[hsl(218,52%,48%)]/70">
+                          Specialized psychiatric care for women
+                        </p>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        to="/services/sports-performance"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
+                      >
+                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">Sports/Performance Psychiatry</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-[hsl(218,52%,48%)]/70">
+                          Mental health support for athletes and performers
                         </p>
                       </Link>
                     </NavigationMenuLink>
