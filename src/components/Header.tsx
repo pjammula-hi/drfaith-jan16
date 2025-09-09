@@ -33,7 +33,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-background via-background to-secondary/30 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
+    <header className="sticky top-0 z-50 w-full bg-white border-b border-border/40">
       <div className="container flex h-16 items-center justify-between px-4 sm:px-6">
         {/* Logo - Mobile First */}
         <Link to="/" className="flex items-center space-x-2 group flex-shrink-0">
