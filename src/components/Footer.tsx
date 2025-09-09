@@ -161,7 +161,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-[hsl(var(--footer-foreground))]/70 text-sm">
-              © 2024 Discover Mental Health. All rights reserved.
+              © 2024 All rights reserved.
             </p>
             <div className="flex items-center space-x-6">
               <a 
