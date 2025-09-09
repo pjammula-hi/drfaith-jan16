@@ -49,50 +49,51 @@ const About = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-        {/* Education & Training */}
+        {/* Education & Training and Specialized Certifications */}
         <div className="mb-16">
-          <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
-            <div className="flex items-start gap-6">
-              <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0">
-                <GraduationCap className="w-8 h-8 text-muted-foreground" />
-              </div>
-              
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-foreground mb-8">Education & Training</h3>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Education & Training */}
+            <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0">
+                  <GraduationCap className="w-8 h-8 text-muted-foreground" />
+                </div>
                 
-                <div className="space-y-6">
-                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                    <div className="font-semibold text-foreground">MD Degree</div>
-                    <div className="text-muted-foreground sm:text-right">Renaissance School of Medicine, Stony Brook University</div>
-                  </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-foreground mb-8">Education & Training</h3>
                   
-                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                    <div className="font-semibold text-foreground">Residency</div>
-                    <div className="text-muted-foreground sm:text-right">Psychiatry at Westchester Medical Center, NY</div>
+                  <div className="space-y-6">
+                    <div className="flex flex-col gap-2">
+                      <div className="font-semibold text-foreground">MD Degree</div>
+                      <div className="text-muted-foreground">Renaissance School of Medicine, Stony Brook University</div>
+                    </div>
+                    
+                    <div className="flex flex-col gap-2">
+                      <div className="font-semibold text-foreground">Residency</div>
+                      <div className="text-muted-foreground">Psychiatry at Westchester Medical Center, NY</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* Specialized Certifications */}
-        <div className="mb-16">
-          <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
-            <div className="flex items-start gap-6">
-              <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0">
-                <Award className="w-8 h-8 text-primary" />
-              </div>
-              
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-foreground mb-8">Specialized Certifications</h3>
+            {/* Specialized Certifications */}
+            <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0">
+                  <Award className="w-8 h-8 text-primary" />
+                </div>
                 
-                <div className="flex flex-wrap gap-4">
-                  <div className="px-6 py-3 border border-primary/30 rounded-full text-foreground font-medium">
-                    Mindfulness-Based Stress Reduction
-                  </div>
-                  <div className="px-6 py-3 border border-primary/30 rounded-full text-foreground font-medium">
-                    International Society for Sports Psychiatry
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-foreground mb-8">Specialized Certifications</h3>
+                  
+                  <div className="flex flex-col gap-4">
+                    <div className="px-6 py-3 border border-primary/30 rounded-full text-foreground font-medium">
+                      Mindfulness-Based Stress Reduction
+                    </div>
+                    <div className="px-6 py-3 border border-primary/30 rounded-full text-foreground font-medium">
+                      International Society for Sports Psychiatry
+                    </div>
                   </div>
                 </div>
               </div>
