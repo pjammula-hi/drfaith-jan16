@@ -49,15 +49,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-[hsl(var(--footer-accent))]" />
-                <span className="text-[hsl(var(--footer-foreground))]/90">(555) 123-4567</span>
+                <span className="text-[hsl(var(--footer-foreground))]/90">(347) 913 3221</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-[hsl(var(--footer-accent))]" />
-                <span className="text-[hsl(var(--footer-foreground))]/90">info@discover.com</span>
+                <span className="text-[hsl(var(--footer-foreground))]/90">info@drfaithconsiglio.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-[hsl(var(--footer-accent))]" />
-                <span className="text-[hsl(var(--footer-foreground))]/90">123 Wellness Ave, Suite 100</span>
+                <span className="text-[hsl(var(--footer-foreground))]/90">Lina Grand Central 18E 41st Street, 14th Floor, New York, NY 10017</span>
               </div>
             </div>
           </div>
