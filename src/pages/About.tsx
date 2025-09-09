@@ -78,11 +78,25 @@ const About = () => {
 
         {/* Specialized Certifications */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-primary mb-8">Specialized Certifications</h3>
-          
-          <div className="space-y-4">
-            <p className="text-foreground">Mindfulness-Based Stress Reduction</p>
-            <p className="text-foreground">International Society for Sports Psychiatry</p>
+          <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
+            <div className="flex items-start gap-6">
+              <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0">
+                <Award className="w-8 h-8 text-primary" />
+              </div>
+              
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-foreground mb-8">Specialized Certifications</h3>
+                
+                <div className="flex flex-wrap gap-4">
+                  <div className="px-6 py-3 border border-primary/30 rounded-full text-foreground font-medium">
+                    Mindfulness-Based Stress Reduction
+                  </div>
+                  <div className="px-6 py-3 border border-primary/30 rounded-full text-foreground font-medium">
+                    International Society for Sports Psychiatry
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
