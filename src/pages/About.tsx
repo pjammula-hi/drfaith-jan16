@@ -98,49 +98,38 @@ const About = () => {
                 <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
                   <GraduationCap className="w-8 h-8 text-primary" />
                 </div>
-                <CardTitle className="text-2xl text-primary">MD Degree</CardTitle>
+                <CardTitle className="text-2xl text-primary">Education</CardTitle>
               </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-lg font-semibold text-foreground mb-2">
-                  Renaissance School of Medicine
-                </p>
-                <p className="text-muted-foreground">
-                  Stony Brook University
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-primary/20 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <Brain className="w-8 h-8 text-primary" />
+              <CardContent className="text-center space-y-4">
+                <div>
+                  <p className="text-lg font-semibold text-foreground mb-1">
+                    MD Degree
+                  </p>
+                  <p className="text-base text-muted-foreground mb-1">
+                    Renaissance School of Medicine
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Stony Brook University
+                  </p>
                 </div>
-                <CardTitle className="text-2xl text-primary">Residency</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-lg font-semibold text-foreground mb-2">
-                  Psychiatry
-                </p>
-                <p className="text-muted-foreground">
-                  Westchester Medical Center, NY
-                </p>
+                <Separator className="my-4" />
+                <div>
+                  <p className="text-lg font-semibold text-foreground mb-1">
+                    Psychiatry Residency
+                  </p>
+                  <p className="text-base text-muted-foreground">
+                    Westchester Medical Center, NY
+                  </p>
+                </div>
               </CardContent>
             </Card>
-          </div>
-        </div>
 
-        {/* Specialized Certifications */}
-        <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-            Specialized Certifications
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-primary/20 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
                   <Award className="w-8 h-8 text-primary" />
                 </div>
+                <CardTitle className="text-2xl text-primary">Specialized Certifications</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-4">
                 <Badge variant="secondary" className="text-lg px-4 py-2">
@@ -149,30 +138,6 @@ const About = () => {
                 <Badge variant="secondary" className="text-lg px-4 py-2">
                   International Society for Sports Psychiatry
                 </Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="border-primary/20 shadow-lg hover:shadow-xl transition-shadow bg-gradient-to-br from-primary/5 to-secondary/10">
-              <CardHeader>
-                <CardTitle className="text-2xl text-primary text-center">Specialties</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Sports Performance Enhancement</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Burnout Management</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Confidence Building</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Goal Achievement Tools</span>
-                </div>
               </CardContent>
             </Card>
           </div>
