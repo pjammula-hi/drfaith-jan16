@@ -4,7 +4,7 @@ const Insurance = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
-            <h1 className="text-4xl md:text-5xl font-light text-foreground mb-4 tracking-tight">Insurance & Fees</h1>
+            <h1 className="text-4xl md:text-5xl font-light bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent mb-4 tracking-tight">Insurance & Fees</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Transparent pricing and payment information for your mental health care
             </p>
