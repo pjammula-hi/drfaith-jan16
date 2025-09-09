@@ -81,9 +81,9 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  123 Wellness Drive<br />
-                  Suite 200<br />
-                  Your City, State 12345
+                  Lina Grand Central 18E 41st Street<br />
+                  14th Floor<br />
+                  New York, NY 10017
                 </p>
               </CardContent>
             </Card>
