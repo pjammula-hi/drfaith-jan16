@@ -44,8 +44,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-[hsl(var(--footer-foreground))]/80 mb-6 max-w-md leading-relaxed">
-              We provide compassionate, personalized mental health care to help you on your journey to wellness. 
-              Your mental health matters, and we're here to support you every step of the way.
+              We provide compassionate, personalized mental health care to help you on your journey to wellness.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
