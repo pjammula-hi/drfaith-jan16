@@ -7,40 +7,40 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-16 px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
         {/* Background with subtle gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-background to-secondary/10"></div>
         
         {/* Subtle decorative elements */}
-        <div className="absolute top-10 left-1/3 w-32 h-32 bg-primary/5 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-10 right-1/3 w-40 h-40 bg-secondary/10 rounded-full blur-2xl"></div>
+        <div className="absolute top-8 left-1/3 w-24 h-24 bg-primary/5 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-8 right-1/3 w-32 h-32 bg-secondary/10 rounded-full blur-2xl"></div>
         
         <div className="relative max-w-4xl mx-auto text-center">
           {/* Refined heading */}
-          <div className="mb-6 space-y-2">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent leading-tight tracking-tight">
+          <div className="mb-4 space-y-1">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent leading-tight tracking-tight">
               EMPOWER YOUR LIFE
             </h1>
           </div>
           
           {/* Clean subtitle */}
-          <div className="max-w-3xl mx-auto space-y-4">
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-3">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Comprehensive mental health care with
             </p>
-            <p className="text-xl md:text-2xl font-semibold text-primary">
+            <p className="text-lg md:text-xl font-medium text-primary">
               Dr. Faith Consiglio
             </p>
             
             {/* Simple decorative accent */}
-            <div className="flex items-center justify-center py-4">
-              <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary/40"></div>
-              <div className="w-1.5 h-1.5 bg-primary rounded-full mx-4"></div>
-              <div className="h-px w-20 bg-gradient-to-l from-transparent to-primary/40"></div>
+            <div className="flex items-center justify-center py-3">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary/40"></div>
+              <div className="w-1 h-1 bg-primary rounded-full mx-3"></div>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary/40"></div>
             </div>
             
             {/* Concise tagline */}
-            <p className="text-base md:text-lg text-muted-foreground/80 italic max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-muted-foreground/80 italic max-w-2xl mx-auto">
               Discover your path to wellness and optimal mental health
             </p>
           </div>
@@ -101,22 +101,22 @@ const About = () => {
           </div>
         </div>
 
-        <Separator className="my-16 bg-primary/20" />
+        <Separator className="my-12 bg-primary/20" />
 
         {/* My Approach */}
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">
+          <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-6">
             My Approach
           </h2>
           
-          <Card className="border-primary/20 shadow-lg bg-gradient-to-br from-primary/5 to-secondary/10">
-            <CardContent className="p-12">
-              <blockquote className="text-xl md:text-2xl leading-relaxed text-foreground italic">
+          <Card className="border-primary/20 shadow-sm bg-gradient-to-br from-primary/5 to-secondary/10">
+            <CardContent className="p-8">
+              <blockquote className="text-lg md:text-xl leading-relaxed text-foreground italic">
                 "I believe in treating the whole person, not just symptoms. My integrated approach 
                 combines medication management, psychotherapy, and mindfulness practices to support 
                 your journey toward optimal mental wellness."
               </blockquote>
-              <div className="mt-8 text-lg text-primary font-semibold">
+              <div className="mt-6 text-base text-primary font-medium">
                 — Dr. Faith Consiglio
               </div>
             </CardContent>
