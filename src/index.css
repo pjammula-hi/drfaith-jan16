@@ -22,6 +22,7 @@ All colors MUST be HSL.
 
     --nav-primary: 218 52% 48%;
     --nav-primary-foreground: 210 20% 98%;
+    --nav-hover: 320 100% 75%; /* Pink from logo */
 
     --secondary: 210 40% 96%;
     --secondary-foreground: 215 28% 17%;
@@ -73,6 +74,7 @@ All colors MUST be HSL.
 
     --nav-primary: 218 52% 48%;
     --nav-primary-foreground: 210 20% 98%;
+    --nav-hover: 320 100% 75%; /* Pink from logo */
 
     --secondary: 215 28% 25%;
     --secondary-foreground: 210 20% 98%;
