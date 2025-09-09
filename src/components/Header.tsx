@@ -141,6 +141,12 @@ const Header = () => {
                   Resources
                 </Link>
               </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <Link to="/blog" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
+                  BLOG
+                </Link>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </nav>
@@ -230,6 +236,13 @@ const Header = () => {
                       onClick={() => setIsOpen(false)}
                     >
                       Resources
+                    </Link>
+                    <Link
+                      to="/blog"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      BLOG
                     </Link>
                   </div>
                 </nav>

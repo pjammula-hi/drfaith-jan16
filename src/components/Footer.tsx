@@ -68,14 +68,22 @@ const Footer = () => {
                   Insurance
                 </Link>
               </li>
-              <li>
-                <Link 
-                  to="/resources" 
-                  className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
-                >
-                  Resources
-                </Link>
-              </li>
+               <li>
+                 <Link 
+                   to="/resources" 
+                   className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
+                 >
+                   Resources
+                 </Link>
+               </li>
+               <li>
+                 <Link 
+                   to="/blog" 
+                   className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
+                 >
+                   BLOG
+                 </Link>
+               </li>
               <li>
                 <Link 
                   to="/contact" 
