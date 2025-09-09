@@ -11,12 +11,12 @@ const Index = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl font-light leading-tight mb-6 tracking-tight">
                 <span className="text-foreground">Compassionate</span>
                 <br />
                 <span className="text-orange-600">Mental Health Care</span>
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
                 Integrating medication management and psychotherapy to support your physical, mental, and social well-being. General Adult Psychiatry, emphasis on depression, anxiety, ADHD, OCD, women's health, sports/performance psychiatry.
               </p>
             </div>

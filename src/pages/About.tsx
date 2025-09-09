@@ -18,17 +18,17 @@ const About = () => {
         <div className="relative max-w-4xl mx-auto text-center">
           {/* Refined heading */}
           <div className="mb-4 space-y-1">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent leading-tight tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-light bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent leading-tight tracking-tight">
               EMPOWER YOUR LIFE
             </h1>
           </div>
           
           {/* Clean subtitle */}
           <div className="max-w-3xl mx-auto space-y-3">
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               Comprehensive mental health care with
             </p>
-            <p className="text-lg md:text-xl font-medium text-primary">
+            <p className="text-xl font-medium text-primary">
               Dr. Faith Consiglio
             </p>
             
@@ -40,7 +40,7 @@ const About = () => {
             </div>
             
             {/* Concise tagline */}
-            <p className="text-sm md:text-base text-muted-foreground/80 italic max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-muted-foreground leading-relaxed italic max-w-2xl mx-auto">
               Discover your path to wellness and optimal mental health
             </p>
           </div>
@@ -60,7 +60,7 @@ const About = () => {
                 </div>
                 
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-foreground mb-6">Education & Training</h3>
+                  <h3 className="text-xl font-medium text-foreground mb-6">Education & Training</h3>
                   
                   <div className="space-y-4">
                     <div className="flex flex-col gap-1">
@@ -85,7 +85,7 @@ const About = () => {
                 </div>
                 
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-foreground mb-6">Specialized Certifications</h3>
+                  <h3 className="text-xl font-medium text-foreground mb-6">Specialized Certifications</h3>
                   
                   <div className="flex flex-col gap-3">
                     <div className="px-4 py-2 border border-primary/30 rounded-full text-sm font-medium text-foreground">
@@ -105,7 +105,7 @@ const About = () => {
 
         {/* My Approach */}
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-6">
+          <h2 className="text-2xl md:text-3xl font-medium text-primary mb-6">
             My Approach
           </h2>
           

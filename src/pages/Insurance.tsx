@@ -4,8 +4,8 @@ const Insurance = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
-            <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-3">Insurance & Fees</h1>
-            <p className="text-base md:text-lg text-muted-foreground">
+            <h1 className="text-4xl md:text-5xl font-light text-foreground mb-4 tracking-tight">Insurance & Fees</h1>
+            <p className="text-lg text-muted-foreground leading-relaxed">
               Transparent pricing and payment information for your mental health care
             </p>
           </div>
@@ -17,7 +17,7 @@ const Insurance = () => {
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="h-1 w-6 bg-gradient-to-r from-primary to-pink-400 rounded-full"></div>
-                  <h2 className="text-xl font-semibold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+                  <h2 className="text-xl font-medium bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
                     Insurance Coverage
                   </h2>
                 </div>
@@ -47,7 +47,7 @@ const Insurance = () => {
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="h-1 w-6 bg-gradient-to-r from-primary to-pink-400 rounded-full"></div>
-                  <h2 className="text-xl font-semibold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+                  <h2 className="text-xl font-medium bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
                     Fee Structure
                   </h2>
                 </div>
@@ -118,7 +118,7 @@ const Insurance = () => {
             <div className="relative bg-gradient-to-r from-primary/5 via-primary/8 to-pink-50/50 dark:to-pink-900/20 border border-primary/20 rounded-lg p-6 backdrop-blur-sm">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-pink-100/30 dark:to-pink-800/10 rounded-lg"></div>
               <div className="relative z-10">
-                <h2 className="text-xl font-semibold text-foreground mb-3">Questions About Fees or Insurance?</h2>
+                <h2 className="text-xl font-medium text-foreground mb-3">Questions About Fees or Insurance?</h2>
                 <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
                   We're here to help you understand your options and make mental health care accessible. 
                   Please don't hesitate to reach out with any questions about fees, payment plans, or insurance reimbursement.
