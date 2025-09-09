@@ -120,14 +120,6 @@ const Footer = () => {
                   href="#" 
                   className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
                 >
-                  Appointment Scheduling
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
-                >
                   Crisis Resources
                 </a>
               </li>
