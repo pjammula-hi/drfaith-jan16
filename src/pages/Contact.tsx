@@ -101,7 +101,7 @@ const Contact = () => {
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Mail className="h-4 w-4 text-primary" />
-                  <span className="text-muted-foreground">info@drfaithconsiglo@gmail.com</span>
+                  <span className="text-muted-foreground">info@drfaithconsiglio.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-primary" />
