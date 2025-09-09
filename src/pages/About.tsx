@@ -50,50 +50,37 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         {/* Education & Training */}
-        <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-            Education & Training
-          </h2>
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-primary mb-8">Education & Training</h3>
           
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div className="bg-card rounded-lg p-8 shadow-sm border border-border hover:shadow-md transition-shadow">
-              <div className="space-y-6">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                  <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">MD Degree</h3>
-                    <p className="text-foreground">Renaissance School of Medicine, Stony Brook University</p>
-                  </div>
-                </div>
-                <hr className="border-border" />
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                  <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">Residency</h3>
-                    <p className="text-foreground">Psychiatry at Westchester Medical Center, NY</p>
-                  </div>
-                </div>
+          <div className="space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-start sm:gap-8">
+              <div className="min-w-[120px]">
+                <h4 className="font-semibold text-foreground">MD Degree</h4>
+              </div>
+              <div>
+                <p className="text-foreground">Renaissance School of Medicine, Stony Brook University</p>
+              </div>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row sm:items-start sm:gap-8">
+              <div className="min-w-[120px]">
+                <h4 className="font-semibold text-foreground">Residency</h4>
+              </div>
+              <div>
+                <p className="text-foreground">Psychiatry at Westchester Medical Center, NY</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Specialized Certifications */}
-        <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-            Specialized Certifications
-          </h2>
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-primary mb-8">Specialized Certifications</h3>
           
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-card rounded-lg p-8 shadow-sm border border-border hover:shadow-md transition-shadow">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground">Mindfulness-Based Stress Reduction</h3>
-                </div>
-                <hr className="border-border" />
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground">International Society for Sports Psychiatry</h3>
-                </div>
-              </div>
-            </div>
+          <div className="space-y-4">
+            <p className="text-foreground">Mindfulness-Based Stress Reduction</p>
+            <p className="text-foreground">International Society for Sports Psychiatry</p>
           </div>
         </div>
 
