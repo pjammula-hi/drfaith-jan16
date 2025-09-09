@@ -30,36 +30,17 @@ const Footer = () => {
     <footer className="bg-[hsl(var(--footer-bg))] text-[hsl(var(--footer-foreground))] border-t border-white/10">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          {/* Brand Section */}
+          {/* About Dr. Faith */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <PotentillaIcon />
-              <div className="flex flex-col">
-                <span className="text-2xl font-bold text-[hsl(var(--footer-foreground))]">
-                  Discover
-                </span>
-                <span className="text-sm text-[hsl(var(--footer-foreground))]/70 -mt-1">
-                  your best self
-                </span>
-              </div>
-            </div>
-            <p className="text-[hsl(var(--footer-foreground))]/80 mb-6 max-w-[280px] sm:max-w-xs md:max-w-sm leading-relaxed text-sm sm:text-base">
-              We provide compassionate, personalized mental health care to help you on your journey to wellness.
+            <h3 className="text-lg font-semibold text-[hsl(var(--footer-foreground))] mb-4">Dr. Faith Consiglio, MD</h3>
+            <p className="text-[hsl(var(--footer-foreground))]/80 mb-4 leading-relaxed text-sm">
+              Board-certified psychiatrist providing compassionate, integrated mental health care in New York City.
             </p>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-[hsl(var(--footer-accent))]" />
-                <span className="text-[hsl(var(--footer-foreground))]/90">(347) 913 3221</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-[hsl(var(--footer-accent))]" />
-                <span className="text-[hsl(var(--footer-foreground))]/90">info@drfaithconsiglio.com</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 text-[hsl(var(--footer-accent))]" />
-                <span className="text-[hsl(var(--footer-foreground))]/90">Lina Grand Central 18E 41st Street, 14th Floor, New York, NY 10017</span>
-              </div>
-            </div>
+            <ul className="space-y-2 text-sm">
+              <li className="text-[hsl(var(--footer-foreground))]/70">Renaissance School of Medicine</li>
+              <li className="text-[hsl(var(--footer-foreground))]/70">Westchester Medical Center Residency</li>
+              <li className="text-[hsl(var(--footer-foreground))]/70">Mindfulness & Sports Psychology Certified</li>
+            </ul>
           </div>
 
           {/* Quick Links */}
@@ -156,17 +137,36 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* About Dr. Faith */}
+          {/* Brand Section */}
           <div>
-            <h3 className="text-lg font-semibold text-[hsl(var(--footer-foreground))] mb-4">Dr. Faith Consiglio, MD</h3>
-            <p className="text-[hsl(var(--footer-foreground))]/80 mb-4 leading-relaxed text-sm">
-              Board-certified psychiatrist providing compassionate, integrated mental health care in New York City.
+            <div className="flex items-center space-x-3 mb-6">
+              <PotentillaIcon />
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold text-[hsl(var(--footer-foreground))]">
+                  Discover
+                </span>
+                <span className="text-sm text-[hsl(var(--footer-foreground))]/70 -mt-1">
+                  your best self
+                </span>
+              </div>
+            </div>
+            <p className="text-[hsl(var(--footer-foreground))]/80 mb-6 max-w-[280px] sm:max-w-xs md:max-w-sm leading-relaxed text-sm sm:text-base">
+              We provide compassionate, personalized mental health care to help you on your journey to wellness.
             </p>
-            <ul className="space-y-2 text-sm">
-              <li className="text-[hsl(var(--footer-foreground))]/70">Renaissance School of Medicine</li>
-              <li className="text-[hsl(var(--footer-foreground))]/70">Westchester Medical Center Residency</li>
-              <li className="text-[hsl(var(--footer-foreground))]/70">Mindfulness & Sports Psychology Certified</li>
-            </ul>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <Phone className="w-4 h-4 text-[hsl(var(--footer-accent))]" />
+                <span className="text-[hsl(var(--footer-foreground))]/90">(347) 913 3221</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="w-4 h-4 text-[hsl(var(--footer-accent))]" />
+                <span className="text-[hsl(var(--footer-foreground))]/90">info@drfaithconsiglio.com</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <MapPin className="w-4 h-4 text-[hsl(var(--footer-accent))]" />
+                <span className="text-[hsl(var(--footer-foreground))]/90">Lina Grand Central 18E 41st Street, 14th Floor, New York, NY 10017</span>
+              </div>
+            </div>
           </div>
         </div>
 
