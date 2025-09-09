@@ -55,52 +55,59 @@ const About = () => {
             Education & Training
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-primary/20 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <GraduationCap className="w-8 h-8 text-primary" />
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="relative overflow-hidden border-none shadow-xl bg-gradient-to-br from-primary/5 via-background to-primary/10">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -translate-y-16 translate-x-16"></div>
+              <CardHeader className="relative z-10 pb-6">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center">
+                    <GraduationCap className="w-7 h-7 text-primary" />
+                  </div>
+                  <CardTitle className="text-2xl text-primary">Education</CardTitle>
                 </div>
-                <CardTitle className="text-2xl text-primary">Education</CardTitle>
               </CardHeader>
-              <CardContent className="text-center space-y-4">
-                <div>
-                  <p className="text-lg font-semibold text-foreground mb-1">
-                    MD Degree
-                  </p>
-                  <p className="text-base text-muted-foreground mb-1">
+              <CardContent className="relative z-10 space-y-6">
+                <div className="bg-background/50 rounded-lg p-4 border border-primary/10">
+                  <h4 className="text-lg font-bold text-primary mb-2">Doctor of Medicine (MD)</h4>
+                  <p className="text-base font-medium text-foreground mb-1">
                     Renaissance School of Medicine
                   </p>
                   <p className="text-sm text-muted-foreground">
                     Stony Brook University
                   </p>
                 </div>
-                <Separator className="my-4" />
-                <div>
-                  <p className="text-lg font-semibold text-foreground mb-1">
-                    Psychiatry Residency
-                  </p>
-                  <p className="text-base text-muted-foreground">
-                    Westchester Medical Center, NY
+                <div className="bg-background/50 rounded-lg p-4 border border-primary/10">
+                  <h4 className="text-lg font-bold text-primary mb-2">Psychiatry Residency</h4>
+                  <p className="text-base font-medium text-foreground">
+                    Westchester Medical Center, New York
                   </p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <Award className="w-8 h-8 text-primary" />
+            <Card className="relative overflow-hidden border-none shadow-xl bg-gradient-to-br from-secondary/5 via-background to-secondary/10">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full -translate-y-16 translate-x-16"></div>
+              <CardHeader className="relative z-10 pb-6">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-14 h-14 bg-secondary/20 rounded-xl flex items-center justify-center">
+                    <Award className="w-7 h-7 text-secondary" />
+                  </div>
+                  <CardTitle className="text-2xl text-secondary">Specialized Certifications</CardTitle>
                 </div>
-                <CardTitle className="text-2xl text-primary">Specialized Certifications</CardTitle>
               </CardHeader>
-              <CardContent className="text-center space-y-4">
-                <Badge variant="secondary" className="text-lg px-4 py-2">
-                  Mindfulness-Based Stress Reduction
-                </Badge>
-                <Badge variant="secondary" className="text-lg px-4 py-2">
-                  International Society for Sports Psychiatry
-                </Badge>
+              <CardContent className="relative z-10 space-y-4">
+                <div className="bg-background/50 rounded-lg p-4 border border-secondary/10 flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-secondary rounded-full flex-shrink-0"></div>
+                  <p className="text-base font-medium text-foreground">
+                    Mindfulness-Based Stress Reduction
+                  </p>
+                </div>
+                <div className="bg-background/50 rounded-lg p-4 border border-secondary/10 flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-secondary rounded-full flex-shrink-0"></div>
+                  <p className="text-base font-medium text-foreground">
+                    International Society for Sports Psychiatry
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
