@@ -57,7 +57,7 @@ const Header = () => {
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-transparent backdrop-blur-sm border-none shadow-none">
-                  <div className="grid gap-1.5 p-4 w-max min-w-[280px]">
+                  <div className="grid gap-0.5 p-4 w-max min-w-[280px]">
                     <NavigationMenuLink asChild>
                       <Link
                         to="/services/general-adult-psychiatry"
