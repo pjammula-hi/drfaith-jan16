@@ -33,13 +33,13 @@ const Footer = () => {
           {/* About Dr. Faith */}
           <div className="lg:col-span-2">
             <h3 className="text-lg font-semibold text-[hsl(var(--footer-foreground))] mb-4">Dr. Faith Consiglio, MD</h3>
-            <p className="text-[hsl(var(--footer-foreground))]/80 mb-4 leading-relaxed text-sm">
+            <p className="text-[hsl(var(--footer-foreground))]/80 mb-4 leading-relaxed text-sm break-words">
               Board-certified psychiatrist providing compassionate, integrated mental health care in New York City.
             </p>
             <ul className="space-y-2 text-sm">
-              <li className="text-[hsl(var(--footer-foreground))]/70">Renaissance School of Medicine</li>
-              <li className="text-[hsl(var(--footer-foreground))]/70">Westchester Medical Center Residency</li>
-              <li className="text-[hsl(var(--footer-foreground))]/70">Mindfulness & Sports Psychology Certified</li>
+              <li className="text-[hsl(var(--footer-foreground))]/70 break-words">Renaissance School of Medicine</li>
+              <li className="text-[hsl(var(--footer-foreground))]/70 break-words">Westchester Medical Center Residency</li>
+              <li className="text-[hsl(var(--footer-foreground))]/70 break-words">Mindfulness & Sports Psychology Certified</li>
             </ul>
           </div>
 
