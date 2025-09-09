@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const WingIcon = () => (
   <svg
@@ -30,24 +33,26 @@ const WingIcon = () => (
 );
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-background via-background to-secondary/30 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
-      <div className="container flex h-16 items-center justify-between px-6">
-        {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2 group">
+      <div className="container flex h-16 items-center justify-between px-4 sm:px-6">
+        {/* Logo - Mobile First */}
+        <Link to="/" className="flex items-center space-x-2 group flex-shrink-0">
           <WingIcon />
           <div className="flex flex-col">
-            <span className="text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">
+            <span className="text-lg sm:text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">
               Discover
             </span>
-            <span className="text-sm text-muted-foreground -mt-1">
+            <span className="text-xs sm:text-sm text-muted-foreground -mt-1">
               your best self
             </span>
           </div>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        {/* Desktop Navigation - Hidden on Mobile */}
+        <nav className="hidden lg:flex items-center space-x-6">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -109,21 +114,116 @@ const Header = () => {
           </NavigationMenu>
         </nav>
 
-        {/* Action Buttons */}
-        <div className="flex items-center space-x-3">
-          <Button 
-            variant="outline" 
-            size="sm"
-            className="border-primary/20 text-primary hover:bg-primary/5 hidden sm:flex"
-          >
-            Patient Login
-          </Button>
-          <Button 
-            size="sm"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground"
-          >
-            New Patients
-          </Button>
+        {/* Mobile Actions + Hamburger Menu */}
+        <div className="flex items-center space-x-2">
+          {/* Desktop Action Buttons */}
+          <div className="hidden md:flex items-center space-x-3">
+            <Button 
+              variant="outline" 
+              size="sm"
+              className="border-primary/20 text-primary hover:bg-primary/5"
+            >
+              Patient Login
+            </Button>
+            <Button 
+              size="sm"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+            >
+              New Patients
+            </Button>
+          </div>
+
+          {/* Mobile Hamburger Menu */}
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="lg:hidden p-2"
+                aria-label="Toggle menu"
+              >
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[280px] sm:w-[350px]">
+              <div className="flex flex-col h-full">
+                {/* Mobile Menu Header */}
+                <div className="flex items-center justify-between pb-4 border-b">
+                  <div className="flex items-center space-x-2">
+                    <WingIcon />
+                    <div className="flex flex-col">
+                      <span className="text-lg font-bold text-primary">
+                        Discover
+                      </span>
+                      <span className="text-xs text-muted-foreground -mt-1">
+                        your best self
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mobile Navigation */}
+                <nav className="flex-1 py-6">
+                  <div className="space-y-1">
+                    <Link
+                      to="/services"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Services
+                    </Link>
+                    <Link
+                      to="/insurance"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Insurance
+                    </Link>
+                    <Link
+                      to="/about"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      About Us
+                    </Link>
+                    <Link
+                      to="/contact"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Contact Us
+                    </Link>
+                    <Link
+                      to="/resources"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Resources
+                    </Link>
+                  </div>
+                </nav>
+
+                {/* Mobile Action Buttons */}
+                <div className="space-y-3 pt-6 border-t">
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    className="w-full border-primary/20 text-primary hover:bg-primary/5"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Patient Login
+                  </Button>
+                  <Button 
+                    size="lg"
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    New Patients
+                  </Button>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
