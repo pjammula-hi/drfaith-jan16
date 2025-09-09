@@ -66,7 +66,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/f783a793-c595-4ffe-8504-a0582194860f.png" 
                 alt="Dr. Faith Consiglio - Board Certified Psychiatrist" 
-                className="w-80 h-96 object-cover rounded-2xl shadow-lg"
+                className="w-80 h-96 object-contain rounded-2xl shadow-lg bg-white/5"
               />
               
               {/* Doctor Info Card */}
