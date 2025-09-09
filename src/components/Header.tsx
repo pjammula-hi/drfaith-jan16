@@ -53,7 +53,7 @@ const Header = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-foreground hover:text-primary">
+                <NavigationMenuTrigger className="text-primary hover:text-primary/80">
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -85,25 +85,25 @@ const Header = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link to="/insurance" className="text-foreground hover:text-primary transition-colors font-medium px-4 py-2">
+                <Link to="/insurance" className="text-primary hover:text-primary/80 transition-colors font-medium px-4 py-2">
                   Insurance
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link to="/about" className="text-foreground hover:text-primary transition-colors font-medium px-4 py-2">
+                <Link to="/about" className="text-primary hover:text-primary/80 transition-colors font-medium px-4 py-2">
                   About Us
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link to="/contact" className="text-foreground hover:text-primary transition-colors font-medium px-4 py-2">
+                <Link to="/contact" className="text-primary hover:text-primary/80 transition-colors font-medium px-4 py-2">
                   Contact Us
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link to="/resources" className="text-foreground hover:text-primary transition-colors font-medium px-4 py-2">
+                <Link to="/resources" className="text-primary hover:text-primary/80 transition-colors font-medium px-4 py-2">
                   Resources
                 </Link>
               </NavigationMenuItem>
@@ -164,35 +164,35 @@ const Header = () => {
                   <div className="space-y-1">
                     <Link
                       to="/services"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-primary hover:bg-accent hover:text-primary/80 transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
                       Services
                     </Link>
                     <Link
                       to="/insurance"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-primary hover:bg-accent hover:text-primary/80 transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
                       Insurance
                     </Link>
                     <Link
                       to="/about"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-primary hover:bg-accent hover:text-primary/80 transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
                       About Us
                     </Link>
                     <Link
                       to="/contact"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-primary hover:bg-accent hover:text-primary/80 transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
                       Contact Us
                     </Link>
                     <Link
                       to="/resources"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-primary hover:bg-accent hover:text-primary/80 transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
                       Resources
