@@ -43,7 +43,7 @@ const Footer = () => {
                 </span>
               </div>
             </div>
-            <p className="text-[hsl(var(--footer-foreground))]/80 mb-6 max-w-xs sm:max-w-sm md:max-w-md leading-relaxed text-sm sm:text-base">
+            <p className="text-[hsl(var(--footer-foreground))]/80 mb-6 max-w-[280px] sm:max-w-xs md:max-w-sm leading-relaxed text-sm sm:text-base">
               We provide compassionate, personalized mental health care to help you on your journey to wellness.
             </p>
             <div className="space-y-3">
