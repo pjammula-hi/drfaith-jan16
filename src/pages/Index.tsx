@@ -63,11 +63,17 @@ const Index = () => {
           {/* Right Content - Photo Placeholder */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <img 
-                src="/lovable-uploads/f783a793-c595-4ffe-8504-a0582194860f.png" 
-                alt="Dr. Faith Consiglio - Board Certified Psychiatrist" 
-                className="w-80 h-96 object-contain rounded-2xl shadow-lg bg-white/5"
-              />
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/f783a793-c595-4ffe-8504-a0582194860f.png" 
+                  alt="Dr. Faith Consiglio - Board Certified Psychiatrist" 
+                  className="w-80 h-96 object-contain rounded-2xl shadow-2xl"
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05))',
+                    backdropFilter: 'blur(10px)'
+                  }}
+                />
+              </div>
               
               {/* Doctor Info Card */}
               <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
