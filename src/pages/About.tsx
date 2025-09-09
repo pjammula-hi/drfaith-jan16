@@ -7,14 +7,49 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-secondary/30 to-primary/5">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
-            EMPOWER YOUR LIFE
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Comprehensive mental health care with Dr. Faith Consiglio
-          </p>
+      <section className="relative overflow-hidden py-24 px-4 sm:px-6 lg:px-8">
+        {/* Background with modern gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent"></div>
+        
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        
+        <div className="relative max-w-5xl mx-auto text-center">
+          {/* Main heading with modern typography */}
+          <div className="mb-8 space-y-4">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent leading-tight tracking-tight">
+              EMPOWER
+            </h1>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold bg-gradient-to-r from-primary/80 via-primary to-primary/70 bg-clip-text text-transparent leading-tight tracking-tight -mt-4">
+              YOUR LIFE
+            </h1>
+          </div>
+          
+          {/* Elegant subtitle */}
+          <div className="max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl lg:text-3xl text-foreground/80 font-light leading-relaxed mb-4">
+              Comprehensive mental health care with
+            </p>
+            <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary mb-8">
+              Dr. Faith Consiglio
+            </p>
+            
+            {/* Decorative line */}
+            <div className="flex items-center justify-center space-x-4 mb-8">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary/50"></div>
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <div className="h-px w-32 bg-gradient-to-r from-primary/50 via-primary/30 to-primary/50"></div>
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <div className="h-px w-16 bg-gradient-to-r from-primary/50 to-transparent"></div>
+            </div>
+            
+            {/* Inspiring tagline */}
+            <p className="text-lg md:text-xl text-muted-foreground italic font-light max-w-2xl mx-auto">
+              "Discover your path to wellness, confidence, and optimal mental health"
+            </p>
+          </div>
         </div>
       </section>
 
