@@ -56,15 +56,15 @@ const Header = () => {
                 <NavigationMenuTrigger className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))]">
                   Services
                 </NavigationMenuTrigger>
-                <NavigationMenuContent>
+                <NavigationMenuContent className="bg-transparent backdrop-blur-sm border-none shadow-none">
                   <div className="grid gap-3 p-4 w-[400px]">
                     <NavigationMenuLink asChild>
                       <Link
                         to="/services/therapy"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
-                        <div className="text-sm font-medium leading-none">Individual Therapy</div>
-                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">Individual Therapy</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-[hsl(218,52%,48%)]/70">
                           Personalized one-on-one sessions for your mental health journey
                         </p>
                       </Link>
@@ -72,10 +72,10 @@ const Header = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         to="/services/group"
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
                       >
-                        <div className="text-sm font-medium leading-none">Group Therapy</div>
-                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        <div className="text-sm font-medium leading-none text-[hsl(218,52%,48%)]">Group Therapy</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-[hsl(218,52%,48%)]/70">
                           Connect with others on similar journeys in a supportive environment
                         </p>
                       </Link>
