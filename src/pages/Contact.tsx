@@ -227,10 +227,10 @@ const Contact = () => {
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="individual-therapy">Individual Therapy</SelectItem>
-                        <SelectItem value="couples-therapy">Couples Therapy</SelectItem>
-                        <SelectItem value="family-therapy">Family Therapy</SelectItem>
-                        <SelectItem value="group-therapy">Group Therapy</SelectItem>
+                        <SelectItem value="General Adult Psychiatry">General Adult Psychiatry</SelectItem>
+                        <SelectItem value="Women's Health">Women's Health</SelectItem>
+                        <SelectItem value="Sports/Performance Psychiatry">Sports/Performance Psychiatry</SelectItem>
+
                         <SelectItem value="consultation">Consultation</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
