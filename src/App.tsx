@@ -11,31 +11,41 @@ import Blog from "./pages/Blog";
 import Insurance from "./pages/Insurance";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import BlogManager from "./pages/BlogManager";
+import BlogAdmin from "./pages/BlogAdmin";
+import { BlogProvider } from "./context/BlogContext";
+import { WritersProvider } from "./context/WritersContext";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-1">
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/insurance" element={<Insurance />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </BrowserRouter>
+      <WritersProvider>
+        <BlogProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <div className="min-h-screen flex flex-col">
+              <Header />
+              <main className="flex-1">
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/blog" element={<Blog />} />
+                  <Route path="/blog/manage" element={<BlogManager />} />
+                  <Route path="/blog/admin" element={<BlogAdmin />} />
+                  <Route path="/insurance" element={<Insurance />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                  {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </main>
+              <Footer />
+            </div>
+          </BrowserRouter>
+        </BlogProvider>
+      </WritersProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );

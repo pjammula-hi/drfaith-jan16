@@ -144,7 +144,19 @@ const Header = () => {
 
               <NavigationMenuItem>
                 <Link to="/blog" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
-                  BLOG
+                  Blog
+                </Link>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <Link to="/blog/manage" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
+                  Blog Editor
+                </Link>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <Link to="/blog/admin" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
+                  Admin Panel
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -242,7 +254,21 @@ const Header = () => {
                       className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
-                      BLOG
+                      Blog
+                    </Link>
+                    <Link
+                      to="/blog/manage"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Blog Editor
+                    </Link>
+                    <Link
+                      to="/blog/admin"
+                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Admin Panel
                     </Link>
                   </div>
                 </nav>
