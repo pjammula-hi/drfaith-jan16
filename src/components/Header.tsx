@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Menu } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+
+const NAV_LINKS = [
+  { to: "/", label: "Home" },
+  { to: "/insurance", label: "Insurance" },
+  { to: "/about", label: "About Us" },
+  { to: "/contact", label: "Contact Us" },
+] as const;
 
 const PotentillaIcon = () => (
   <svg
@@ -31,6 +37,8 @@ const PotentillaIcon = () => (
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-border/40">
@@ -49,132 +57,26 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation - Hidden on Mobile */}
-        <nav className="hidden lg:flex items-center space-x-6">
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] data-[state=open]:text-[hsl(var(--nav-hover))] data-[active]:text-[hsl(218,52%,48%)]">
-                  Services
-                </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-transparent backdrop-blur-sm border-none shadow-none">
-                  <div className="grid gap-0.5 p-4 w-max min-w-[280px]">
-                    <NavigationMenuLink asChild>
-                      <Link
-                        to="/services/general-adult-psychiatry"
-                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
-                      >
-                        <div className="text-sm font-medium text-[hsl(218,52%,48%)]">General Adult Psychiatry</div>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        to="/services/depression"
-                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
-                      >
-                        <div className="text-sm font-medium text-[hsl(218,52%,48%)]">Depression</div>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        to="/services/anxiety"
-                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
-                      >
-                        <div className="text-sm font-medium text-[hsl(218,52%,48%)]">Anxiety</div>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        to="/services/adhd"
-                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
-                      >
-                        <div className="text-sm font-medium text-[hsl(218,52%,48%)]">ADHD</div>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        to="/services/ocd"
-                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
-                      >
-                        <div className="text-sm font-medium text-[hsl(218,52%,48%)]">OCD</div>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        to="/services/womens-health"
-                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
-                      >
-                        <div className="text-sm font-medium text-[hsl(218,52%,48%)]">Women's Health</div>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        to="/services/sports-performance"
-                        className="block select-none rounded-md px-3 py-2 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-[hsl(var(--nav-hover))] focus:bg-white/10 focus:text-[hsl(var(--nav-hover))]"
-                      >
-                        <div className="text-sm font-medium text-[hsl(218,52%,48%)]">Sports/Performance Psychiatry</div>
-                      </Link>
-                    </NavigationMenuLink>
-                  </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link to="/insurance" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
-                  Insurance
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link to="/about" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
-                  About Us
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link to="/contact" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
-                  Contact Us
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link to="/resources" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
-                  Resources
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link to="/blog" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
-                  Blog
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link to="/blog/manage" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
-                  Blog Editor
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link to="/blog/admin" className="text-[hsl(218,52%,48%)] hover:text-[hsl(var(--nav-hover))] transition-colors font-medium px-4 py-2">
-                  Admin Panel
-                </Link>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+        <nav className="hidden lg:flex items-center space-x-2">
+          {NAV_LINKS.map(({ to, label }) => (
+            <Link
+              key={to}
+              to={to}
+              className={`transition-colors font-medium px-4 py-2 hover:text-[hsl(var(--nav-hover))] ${
+                isActive(to) ? "text-[hsl(var(--nav-hover))]" : "text-[hsl(var(--nav-primary))]"
+              }`}
+              aria-current={isActive(to) ? "page" : undefined}
+            >
+              {label}
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile Actions + Hamburger Menu */}
         <div className="flex items-center space-x-2">
           {/* Desktop Action Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button 
-              variant="outline" 
-              size="sm"
-              className="border-primary/20 text-primary hover:bg-primary/5"
-            >
-              Patient Login
-            </Button>
-            <Button 
+            <Button
               size="sm"
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
@@ -214,76 +116,27 @@ const Header = () => {
                 {/* Mobile Navigation */}
                 <nav className="flex-1 py-6">
                   <div className="space-y-1">
-                    <Link
-                      to="/services"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Services
-                    </Link>
-                    <Link
-                      to="/insurance"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Insurance
-                    </Link>
-                    <Link
-                      to="/about"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      About Us
-                    </Link>
-                    <Link
-                      to="/contact"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Contact Us
-                    </Link>
-                    <Link
-                      to="/resources"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Resources
-                    </Link>
-                    <Link
-                      to="/blog"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Blog
-                    </Link>
-                    <Link
-                      to="/blog/manage"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Blog Editor
-                    </Link>
-                    <Link
-                      to="/blog/admin"
-                      className="flex items-center px-3 py-3 text-base font-medium rounded-md text-[hsl(218,52%,48%)] hover:bg-accent hover:text-[hsl(var(--nav-hover))] transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Admin Panel
-                    </Link>
+                    {NAV_LINKS.map(({ to, label }) => (
+                      <Link
+                        key={to}
+                        to={to}
+                        className={`flex items-center px-3 py-3 text-base font-medium rounded-md transition-colors ${
+                          isActive(to)
+                            ? "text-[hsl(var(--nav-hover))]"
+                            : "text-[hsl(var(--nav-primary))] hover:bg-accent hover:text-[hsl(var(--nav-hover))]"
+                        }`}
+                        aria-current={isActive(to) ? "page" : undefined}
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {label}
+                      </Link>
+                    ))}
                   </div>
                 </nav>
 
                 {/* Mobile Action Buttons */}
                 <div className="space-y-3 pt-6 border-t">
-                  <Button 
-                    variant="outline" 
-                    size="lg"
-                    className="w-full border-primary/20 text-primary hover:bg-primary/5"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Patient Login
-                  </Button>
-                  <Button 
+                  <Button
                     size="lg"
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                     onClick={() => setIsOpen(false)}

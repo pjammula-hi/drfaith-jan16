@@ -46,10 +46,10 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link 
-                  to="/services" 
+                  to="/" 
                   className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
                 >
-                  Our Services
+                  Home
                 </Link>
               </li>
               <li>
@@ -68,14 +68,7 @@ const Footer = () => {
                   Insurance
                 </Link>
               </li>
-               <li>
-                 <Link 
-                   to="/resources" 
-                   className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
-                 >
-                   Resources
-                 </Link>
-               
+              <li>
                 <Link 
                   to="/contact" 
                   className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
