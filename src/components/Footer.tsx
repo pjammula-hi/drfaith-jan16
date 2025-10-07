@@ -75,16 +75,7 @@ const Footer = () => {
                  >
                    Resources
                  </Link>
-               </li>
-               <li>
-                 <Link 
-                   to="/blog" 
-                   className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
-                 >
-                   BLOG
-                 </Link>
-               </li>
-              <li>
+               
                 <Link 
                   to="/contact" 
                   className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
