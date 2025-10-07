@@ -4,12 +4,19 @@ This project is a Vite + React + TypeScript application styled with Tailwind CSS
 
 ## Local Development
 
-```sh
-npm install
-npm run dev
-```
+1. Copy the sample environment and provide the required keys:
+   ```sh
+   cp .env.example .env
+   ```
+2. Update `.env` with your Google reCAPTCHA keys and Gmail SMTP app password (an app-specific password is required for Gmail).
+3. Install dependencies and start both the web client and the contact API:
+   ```sh
+   npm install
+   npm run server   # in a separate terminal
+   npm run dev
+   ```
 
-The dev server listens on port 5173 by default. Update `.env` or Vite config if you need a different port.
+The Vite dev server listens on port 8080 by default (see `vite.config.ts`). Update `.env` or the Vite config if you need a different port.
 
 ## Available Scripts
 
@@ -17,6 +24,7 @@ The dev server listens on port 5173 by default. Update `.env` or Vite config if 
 - `npm run build` – generate a production build
 - `npm run preview` – preview the production build locally
 - `npm run lint` – run ESLint across the codebase
+- `npm run server` – start the Express API that verifies reCAPTCHA responses and sends contact form emails
 
 ## Tech Stack
 

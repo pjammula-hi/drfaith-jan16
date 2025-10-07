@@ -1,14 +1,13 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
 import { MapPin, Mail, Phone, Shield } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,36 +18,93 @@ const Contact = () => {
     service: "",
     message: ""
   });
-  const [showVerification, setShowVerification] = useState(false);
-  const [verificationCode, setVerificationCode] = useState("");
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const recaptchaRef = useRef<ReCAPTCHA | null>(null);
+  const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+  const isRecaptchaConfigured = Boolean(recaptchaSiteKey);
   const { toast } = useToast();
+
+  const resetForm = () => {
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      service: "",
+      message: ""
+    });
+    setCaptchaToken(null);
+    recaptchaRef.current?.reset();
+  };
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setShowVerification(true);
-  };
 
-  const handleVerificationSubmit = () => {
-    if (verificationCode.length === 6) {
-      setShowVerification(false);
+    if (!formData.service) {
       toast({
-        title: "Message Sent Successfully",
-        description: "Your message has been sent. We'll get back to you soon!",
+        title: "Select a service",
+        description: "Please choose the service you're interested in before submitting.",
+        variant: "destructive",
       });
-      // Reset form
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        service: "",
-        message: ""
+      return;
+    }
+
+    if (!isRecaptchaConfigured) {
+      toast({
+        title: "Verification unavailable",
+        description: "Human verification is not configured. Please try again later.",
+        variant: "destructive",
       });
-      setVerificationCode("");
+      return;
+    }
+
+    if (!captchaToken) {
+      toast({
+        title: "Verify you're human",
+        description: "Please complete the reCAPTCHA before submitting your message.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    try {
+      setIsSubmitting(true);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          formData,
+          captchaToken,
+        }),
+      });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || "Unable to send your message right now.");
+      }
+
+      toast({
+        title: "Message sent successfully",
+        description: "Your message has been delivered. We'll get back to you soon!",
+      });
+
+      resetForm();
+    } catch (error) {
+      toast({
+        title: "Submission failed",
+        description: error instanceof Error ? error.message : "Something went wrong while sending your message.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -252,13 +308,30 @@ const Contact = () => {
                     />
                   </div>
 
+                  {/* reCAPTCHA */}
+                  <div className="flex justify-center">
+                    {isRecaptchaConfigured ? (
+                      <ReCAPTCHA
+                        ref={recaptchaRef}
+                        sitekey={recaptchaSiteKey}
+                        onChange={(token) => setCaptchaToken(token)}
+                        onExpired={() => setCaptchaToken(null)}
+                      />
+                    ) : (
+                      <p className="text-sm text-destructive text-center">
+                        Human verification is not configured. Please contact the site administrator.
+                      </p>
+                    )}
+                  </div>
+
                   {/* Submit Button */}
                   <Button
                     type="submit"
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium py-3 transition-all duration-200"
                     size="lg"
+                    disabled={isSubmitting || !isRecaptchaConfigured}
                   >
-                    Send Message
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
@@ -266,52 +339,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      {/* SMS Verification Modal */}
-      <Dialog open={showVerification} onOpenChange={setShowVerification}>
-        <DialogContent className="sm:max-w-md">
-          <DialogHeader>
-            <DialogTitle className="text-center">Verify Your Phone Number</DialogTitle>
-          </DialogHeader>
-          <div className="space-y-6 py-4">
-            <p className="text-center text-muted-foreground">
-              We've sent a 6-digit verification code to your phone number.
-            </p>
-            <div className="flex justify-center">
-              <InputOTP
-                maxLength={6}
-                value={verificationCode}
-                onChange={setVerificationCode}
-              >
-                <InputOTPGroup>
-                  <InputOTPSlot index={0} />
-                  <InputOTPSlot index={1} />
-                  <InputOTPSlot index={2} />
-                  <InputOTPSlot index={3} />
-                  <InputOTPSlot index={4} />
-                  <InputOTPSlot index={5} />
-                </InputOTPGroup>
-              </InputOTP>
-            </div>
-            <div className="flex gap-3">
-              <Button
-                variant="outline"
-                onClick={() => setShowVerification(false)}
-                className="flex-1"
-              >
-                Cancel
-              </Button>
-              <Button
-                onClick={handleVerificationSubmit}
-                disabled={verificationCode.length !== 6}
-                className="flex-1"
-              >
-                Verify & Send
-              </Button>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };
