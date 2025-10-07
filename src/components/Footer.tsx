@@ -29,7 +29,7 @@ const Footer = () => {
   return (
     <footer className="bg-[hsl(var(--footer-bg))] text-[hsl(var(--footer-foreground))] border-t border-white/10">
       <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Dr. Faith */}
           <div className="lg:col-span-2">
             <h3 className="text-lg font-semibold text-[hsl(var(--footer-foreground))] mb-4">Dr. Faith Consiglio, MD</h3>
@@ -75,45 +75,6 @@ const Footer = () => {
                 >
                   Contact Us
                 </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Patient Resources */}
-          <div>
-            <h3 className="text-lg font-semibold text-[hsl(var(--footer-foreground))] mb-4">Patient Resources</h3>
-            <ul className="space-y-3">
-              <li>
-                <a 
-                  href="#" 
-                  className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
-                >
-                  Patient Portal
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
-                >
-                  New Patient Forms
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
-                >
-                  Crisis Resources
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  className="text-[hsl(var(--footer-foreground))]/80 hover:text-[hsl(var(--footer-accent))] transition-colors"
-                >
-                  Privacy Policy
-                </a>
               </li>
             </ul>
           </div>
